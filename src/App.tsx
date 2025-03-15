@@ -1,3 +1,3 @@
 export const App = () => {
-  return <h1>Vite / React template</h1>;
+  return <h1>Vite React Template</h1>;
 };
