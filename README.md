@@ -43,7 +43,7 @@ bun create wllmr/vite-react-template my-app
 You can use **Vite's built-in create command** to set up the project:
 
 ```sh
-npm create vite@latest my-app --template wllmr/vite-react-template \
+npm create vite@latest my-app --template wllmr/vite-react-template --no \
 && cd my-app \
 && npm install
 ```

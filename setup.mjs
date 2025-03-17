@@ -54,7 +54,7 @@ const replaceInFile = (filePath, placeholder, replacement) => {
 
 filesToModify.forEach((file) => {
   textsToReplace.forEach(([oldText, newText]) =>
-    replaceInFile(path.join(projectDir, file), oldText, newText)
+    replaceInFile(path.join(projectDir, file), oldText, newText),
   );
 });
 
@@ -83,7 +83,7 @@ if (fs.existsSync(packageJsonPath)) {
     fs.writeFileSync(
       packageJsonPath,
       JSON.stringify(packageJson, null, 2) + "\n",
-      "utf8"
+      "utf8",
     );
   }
 }
